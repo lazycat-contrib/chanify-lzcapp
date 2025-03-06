@@ -1,0 +1,10 @@
+services:
+    chanify:
+        stdin_open: true
+        tty: true
+        ports:
+            - 80:80
+        volumes:
+            - /my/data:/root/.chanify
+        image: wizjin/chanify:latest
+        command: serve --registerable=true --name=xxxx --endpoint=http://xxxxxxx

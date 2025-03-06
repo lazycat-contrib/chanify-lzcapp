@@ -1,0 +1,39 @@
+{
+  "name": "Chanify",
+  "package": "cloud.lazycat.app.chanify",
+  "description": "一个简单的消息推送工具",
+  "homepage": "https://www.chanify.net",
+  "author": "chanify",
+  "app_features": [
+    "background_task",
+    "public_path"
+  ],
+  "subdomain": "chanify",
+  "version": "1.4.3",
+  "iconPath": "icon.png",
+  "composePath": "docker-compose.yml",
+  "unsupported_platforms": [
+    "ios",
+    "android"
+  ],
+  "lastRouteType": "from_compose",
+  "port_mappings": {
+    "chanify_80_80": {
+      "use": true,
+      "type": "http",
+      "path": "/",
+      "targetPath": "/"
+    }
+  },
+  "image_wizjin_chanify_latest": {
+    "originalImage": "wizjin/chanify:latest",
+    "pushTarget": "lazycat",
+    "newImageName": "registry.lazycat.cloud/czyt/wizjin/chanify:76706b942e8908e6",
+    "timestamp": "2025-03-06T13:15:16.961Z"
+  },
+  "public_paths": [
+    "/"
+  ],
+  "chanify_volume_/root/.chanify_action": "emptyDir",
+  "chanify_volume_/root/.chanify_location": "app_data"
+}
