@@ -1,0 +1,21 @@
+package: cloud.lazycat.app.chanify
+version: 1.4.3
+name: Chanify
+description: "一个简单的消息推送工具"
+min_os_version: 1.5.0
+homepage: https://www.chanify.net
+author: chanify
+locales:
+  en:
+    name: "Chanify"
+    description: "A simple and secure notification forwarding tool."
+  zh:
+    name: "Chanify"
+    description: "一个简单、安全的消息推送工具。"
+unsupported_platforms:
+  - ios
+  - android
+  - tvos
+permissions:
+  required:
+    - net.internet
