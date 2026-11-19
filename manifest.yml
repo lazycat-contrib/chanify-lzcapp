@@ -12,8 +12,8 @@ application:
       backend: http://chanify:80/
 services:
   chanify:
-    # upstream: wizjin/chanify:1.4.3
-    image: registry.lazycat.cloud/czyt/wizjin/chanify:04cde161e007aed5
+    # upstream: wizjin/chanify:1.5.1
+    image: registry.lazycat.cloud/czyt/wizjin/chanify:fa0a7214fb1d5967
     command: serve --registerable=true --name=${LAZYCAT_BOX_NAME}_chanify --endpoint=https://${LAZYCAT_APP_DOMAIN}
     binds:
       - /lzcapp/var/data:/root/.chanify

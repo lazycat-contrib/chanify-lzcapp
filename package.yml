@@ -1,5 +1,5 @@
 package: cloud.lazycat.app.chanify
-version: 1.4.3
+version: 1.5.1
 name: Chanify
 description: "一个简单的消息推送工具"
 min_os_version: 1.5.0
